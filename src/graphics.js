@@ -5,6 +5,17 @@
 import { Util } from './util';
 
 /**
+ * Clear the current frame of the canvas.
+ *
+ * @param {context} context - The context of a HTML canvas.
+ * @param {canvas}  canvas  - The HTML canvas instance.
+ */
+function clear(context, canvas)
+{
+    context.clearRect(0,0, canvas.width, canvas.height);
+}
+
+/**
  * Draw a square to the canvas.
  *
  * @param {context} context - The context of a HTML canvas.
@@ -39,4 +50,4 @@ function drawCircle(context, x, y, radius, color)
 	context.fill();
 }
 
-export { drawSquare, drawCircle }
+export default { drawSquare, drawCircle, clear }

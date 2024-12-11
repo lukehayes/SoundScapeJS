@@ -4,6 +4,7 @@
   },
 
   "scripts": {
-    "build": "esbuild src/soundscape.js --bundle --outfile=public/app.js"
+    "build": "esbuild src/soundscape.js --bundle --outfile=public/app.js",
+    "watch": "esbuild src/soundscape.js --bundle --outfile=public/app.js --watch"
   }
 }

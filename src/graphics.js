@@ -47,4 +47,40 @@ function drawCircle(context, x, y, radius, color)
 	context.fill();
 }
 
-export default { drawSquare, drawCircle, clear }
+/**
+ * Draw an square with an outline to the canvas.
+ *
+ * @param {context} context - The context of a HTML canvas.
+ * @param {number} x        - The x position of the square.
+ * @param {number} y        - The y position of the square.
+ * @param {number} size     - The size (length and width) of the square.
+ * @param {string} color    - (Optional)The color of the square. Defaults to black.
+ */
+function drawSquareStroke(context, x, y, size, color)
+{
+	context.strokeStyle = color ?? 'black';
+	context.strokeRect(x,y, size, size);
+}
+
+/**
+ * Draw an circle with an outline to the canvas.
+ *
+ * @param {context} context - The context of a HTML canvas.
+ * @param {number} x        - The x position of the circle.
+ * @param {number} y        - The y position of the circle.
+ * @param {number} radius   - The radius of the circle.
+ * @param {string} color    - (Optional)The color of the circle. Defaults to black.
+ */
+function drawCircleStroke(context, x, y, radius, color)
+{
+	context.beginPath();
+	context.arc(x,y, radius, 0, Math.PI * 2);
+	context.strokeStyle = color ?? 'black';
+	context.stroke();
+}
+
+export default { drawSquare,
+		 drawCircle, 
+		 drawSquareStroke, 
+		 drawCircleStroke, 
+		 clear }

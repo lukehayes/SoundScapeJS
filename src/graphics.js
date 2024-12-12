@@ -2,8 +2,6 @@
 // Simple rendering helper functions.
 // ----------------------------------------------------------------------------
 
-import { Util } from './util';
-
 /**
  * Clear the current frame of the canvas.
  *

@@ -10,7 +10,7 @@
  */
 function clear(context, canvas)
 {
-    context.clearRect(0,0, canvas.width, canvas.height);
+	context.clearRect(0,0, canvas.width, canvas.height);
 }
 
 /**
@@ -80,7 +80,7 @@ function drawCircleStroke(context, x, y, radius, color)
 }
 
 export default { drawSquare,
-		 drawCircle, 
-		 drawSquareStroke, 
-		 drawCircleStroke, 
-		 clear }
+	drawCircle,
+	drawSquareStroke,
+	drawCircleStroke,
+	clear }

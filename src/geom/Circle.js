@@ -1,5 +1,5 @@
 import Shape from './Shape'
-import gfx from './graphics'
+import gfx from '../graphics'
 
 class Circle extends Shape
 {

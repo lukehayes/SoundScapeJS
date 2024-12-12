@@ -41,7 +41,6 @@ function drawSquare(context, x, y, size, color)
  */
 function drawCircle(context, x, y, radius, color)
 {
-	console.dir(color);
 	context.beginPath();
 	context.arc(x,y, radius, 0, Math.PI * 2);
 	context.fillStyle = color ?? 'black';

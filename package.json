@@ -5,6 +5,8 @@
 
   "scripts": {
     "build": "esbuild src/soundscape.js --bundle --outfile=public/app.js",
+    "release": "esbuild src/soundscape.js --minify --bundle --outfile=public/app.js",
     "watch": "esbuild src/soundscape.js --bundle --outfile=public/app.js --watch"
   }
+
 }
